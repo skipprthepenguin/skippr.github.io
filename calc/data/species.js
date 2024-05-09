@@ -198,7 +198,7 @@ var RBY = {
     },
     Dragonite: {
         types: ['Dragon', 'Flying'],
-        bs: { hp: 91, at: 134, df: 95, sp: 80, sl: 100 },
+        bs: { hp: 101, at: 134, df: 95, sp: 75, sl: 100 },
         weightkg: 210
     },
     Dratini: {
@@ -470,7 +470,7 @@ var RBY = {
         weightkg: 28,
         nfe: true
     },
-    Marowak: { types: ['Ground'], bs: { hp: 75, at: 90, df: 115, sp: 45, sl: 50 }, weightkg: 45 },
+    Marowak: { types: ['Ground'], bs: { hp: 75, at: 85, df: 115, sp: 45, sl: 50 }, weightkg: 45 },
     Meowth: {
         types: ['Normal'],
         bs: { hp: 40, at: 45, df: 35, sp: 90, sl: 40 },
@@ -868,7 +868,7 @@ var GSC_PATCH = {
     Dodrio: { bs: { sa: 60, sd: 60 } },
     Doduo: { bs: { sa: 35, sd: 35 } },
     Dragonair: { bs: { sa: 70, sd: 70 } },
-    Dragonite: { bs: { sa: 100, sd: 100 } },
+    Dragonite: { bs: { sa: 80, sd: 95 } },
     Dratini: { bs: { sa: 50, sd: 50 } },
     Drowzee: { bs: { sa: 43, sd: 90 } },
     Dugtrio: { bs: { sa: 50, sd: 70 } },
