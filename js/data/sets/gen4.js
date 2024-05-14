@@ -290,7 +290,8 @@ var SETDEX_DPP = {
     "UU Life Orb": {"ability":"Overgrow","item":"Life Orb","nature":"Modest","ivs":{"at":30,"sp":30},"evs":{"hp":72,"sa":252,"sd":4,"sp":180},"moves":["Leaf Storm","Focus Blast","Hidden Power Psychic","Synthesis"]},
     "UU Swords Dance": {"ability":"Overgrow","item":"Life Orb","nature":"Jolly","evs":{"hp":4,"at":252,"sp":252},"moves":["Swords Dance","Leaf Blade","Earthquake","Rock Slide"]},
     "UU Attacking Lead": {"ability":"Overgrow","item":"Life Orb","nature":"Naive","ivs":{"at":30,"df":30},"evs":{"at":40,"sa":252,"sp":216},"moves":["Leaf Storm","Quick Attack","Hidden Power Ice","Rock Slide"]},
-    "UU Mixed Attacker": {"ability":"Overgrow","item":"Life Orb","nature":"Hasty","ivs":{"at":30,"df":30},"evs":{"at":252,"sa":80,"sp":176},"moves":["Leaf Storm","Hidden Power Ice","Leaf Blade","Earthquake"]}
+    "UU Mixed Attacker": {"ability":"Overgrow","item":"Life Orb","nature":"Hasty","ivs":{"at":30,"df":30},"evs":{"at":252,"sa":80,"sp":176},"moves":["Leaf Storm","Hidden Power Ice","Leaf Blade","Earthquake"]},
+    "OU Showdown Usage": {"ability":"Overgrow","item":"Life Orb","nature":"Naive","ivs":{"at":30,"sa":30,"sp":30},"evs":{"at":252,"sa":28,"sp":228},"moves":["Hidden Power Fire","Earthquake","Leaf Blade","Crunch"]}
   },
   "Torchic": {
     "LC Mixed Attacker": {"level":5,"ability":"Blaze","item":"Life Orb","nature":"Hasty","ivs":{"at":30,"sa":30},"evs":{"at":36,"sa":200,"sd":36,"sp":236},"moves":["Fire Blast","Hidden Power Grass","Rock Slide","Quick Attack"]}
@@ -694,6 +695,9 @@ var SETDEX_DPP = {
     "UU Swords Dance": {"ability":"Leaf Guard","item":"Life Orb","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Swords Dance","Leaf Blade","Double-Edge","Synthesis"]},
     "UU Physical Wall": {"ability":"Leaf Guard","item":"Leftovers","nature":"Impish","evs":{"hp":252,"df":252,"sd":4},"moves":["Wish","Protect","Leaf Blade","Yawn"]}
   },
+  "Glaceon": {
+    "PU BRRRR (Choice Specs)": {"ability":"Snow Cloak","item":"Choice Specs","nature":"Timid","ivs":{"at":3,"sa":30,"sd":30},"evs":{"hp":40,"sa":252,"sd":4,"sp":212},"moves":["Ice Beam","Shadow Ball","Hidden Power Ground","Baton Pass"]}
+  },
   "Gallade": {
     "OU Attacking Lead": {"ability":"Steadfast","item":"Lum Berry","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Close Combat","Will-O-Wisp","Taunt","Ice Punch"]}
   },
@@ -720,7 +724,7 @@ var SETDEX_DPP = {
     "Ubers Specially-Based Mixed Attacker": {"ability":"Levitate","item":"Griseous Orb","nature":"Rash","evs":{"at":64,"df":200,"sa":184,"sp":60},"moves":["Draco Meteor","Shadow Sneak","Thunder","Outrage"]},
     "Ubers Stallbreaker": {"ability":"Levitate","item":"Griseous Orb","nature":"Modest","evs":{"hp":84,"sa":216,"sd":96,"sp":112},"moves":["Calm Mind","Dragon Pulse","Shadow Ball","Substitute"]},
     "Ubers Sleeping Beauty (Mono-Attacker)": {"ability":"Levitate","item":"Griseous Orb","nature":"Modest","evs":{"hp":200,"df":44,"sa":224,"sd":40},"moves":["Dragon Pulse","Calm Mind","Rest","Sleep Talk"]},
-    "Ubers Physical Attacker": {"ability":"Levitate","item":"Griseous Orb","nature":"Adamant","evs":{"hp":84,"at":216,"sd":96,"sp":112},"moves":["Substitute","Outrage","Earthquake","Shadow Force"]},
+    "Ubers Physical Attacker": {"ability":"Levitate","item":"Griseous Orb","nature":"Adamant","evs":{"hp":84,"at":216,"sd":96,"sp":112},"moves":["Will-O-Wisp","Outrage","Earthquake","Shadow Force"]},
     "Ubers RestTalk": {"ability":"Levitate","item":"Griseous Orb","nature":"Adamant","evs":{"hp":84,"at":216,"sd":96,"sp":112},"moves":["Rest","Sleep Talk","Outrage","Shadow Force"]},
     "Anything Goes Showdown Usage": {"ability":"Levitate","item":"Griseous Orb","nature":"Rash","evs":{"at":68,"df":200,"sa":124,"sp":116},"moves":["Shadow Sneak","Draco Meteor","Earthquake","Outrage"]}
   },
@@ -1876,7 +1880,7 @@ var SETDEX_DPP = {
     "Anything Goes Showdown Usage": {"ability":"Drizzle","item":"Choice Scarf","nature":"Timid","evs":{"sa":252,"sd":4,"sp":252},"moves":["Thunder","Ice Beam","Surf","Water Spout"]}
   },
   "Groudon": {
-    "Ubers Rock Polish": {"ability":"Drought","item":"Life Orb","nature":"Adamant","evs":{"hp":112,"at":252,"df":8,"sp":136},"moves":["Rock Polish","Earthquake","Stone Edge","Dragon Claw"]},
+    "Ubers Rock Polish": {"ability":"Drought","item":"Life Orb","nature":"Adamant","evs":{"hp":112,"at":252,"df":8,"sp":136},"moves":["Rock Polish","Earthquake","Fire Punch","Dragon Claw"]},
     "Ubers Support": {"ability":"Drought","item":"Leftovers","nature":"Sassy","evs":{"hp":252,"at":4,"sd":252},"moves":["Stealth Rock","Earthquake","Dragon Claw","Lava Plume"]},
     "Ubers Thunder Wave + Swords Dance": {"ability":"Drought","item":"Leftovers","nature":"Adamant","evs":{"hp":200,"at":200,"df":108},"moves":["Thunder Wave","Swords Dance","Earthquake","Stone Edge"]},
     "Ubers Choice Band": {"ability":"Drought","item":"Choice Band","nature":"Adamant","evs":{"hp":252,"at":224,"df":32},"moves":["Earthquake","Stone Edge","Dragon Claw","Fire Punch"]},

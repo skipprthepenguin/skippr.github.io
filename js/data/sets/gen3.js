@@ -109,9 +109,7 @@ var SETDEX_ADV = {
     "OU Physical Trick": {"ability":"Synchronize","item":"Choice Band","nature":"Lonely","evs":{"at":252,"sa":4,"sp":252},"moves":["Psychic","Focus Punch","Shadow Ball","Trick"]}
   },
   "Victreebel": {
-    "UU Swords Dance": {"ability":"Chlorophyll","item":"Leftovers","nature":"Adamant","evs":{"hp":128,"at":252,"sp":128},"moves":["Swords Dance","Sludge Bomb","Giga Drain","Sleep Powder"]},
-    "UU Special Attacker": {"ability":"Chlorophyll","item":"Leftovers","nature":"Rash","ivs":{"at":30,"sa":30,"sp":30},"evs":{"hp":80,"at":48,"sa":252,"sp":128},"moves":["Sleep Powder","Sludge Bomb","Hidden Power Fire","Giga Drain"]},
-    "UU SunnyBeam": {"ability":"Chlorophyll","item":"Leftovers","nature":"Rash","ivs":{"at":30,"sa":30,"sp":30},"evs":{"at":152,"sa":252,"sp":104},"moves":["Sunny Day","Solar Beam","Hidden Power Fire","Sludge Bomb"]}
+    "UU Swords Dance": {"ability":"Chlorophyll","item":"Leftovers","nature":"Adamant","ivs":{"sa":30,"sd":30},"evs":{"at":252,"df":4,"sp":252},"moves":["Swords Dance","Sludge Bomb","Hidden Power Ground","Sleep Powder"]}
   },
   "Golem": {
     "OU Choice Band": {"ability":"Rock Head","item":"Choice Band","nature":"Adamant","ivs":{"at":30,"df":30,"sd":30},"evs":{"hp":200,"at":220,"sp":88},"moves":["Earthquake","Rock Slide","Hidden Power Bug","Explosion"]},
@@ -907,7 +905,7 @@ var SETDEX_ADV = {
   },
   "Chinchou": {
     "PU Offensive Utility": {"ability":"Volt Absorb","item":"Leftovers","nature":"Modest","evs":{"sa":252,"sd":4,"sp":252},"moves":["Hydro Pump","Thunderbolt","Ice Beam","Thunder Wave"]},
-    "LC Offensive": {"level":5,"ability":"Volt Absorb","item":"Sitrus Berry","nature":"Modest","ivs":{"at":0},"evs":{"df":52,"sa":228,"sp":220},"moves":["Thunderbolt","Surf","Ice Beam","Substitute"]},
+    "LC Offensive": {"level":5,"ability":"Volt Absorb","item":"Sitrus Berry","nature":"Modest","ivs":{"at":0},"evs":{"df":52,"sa":228,"sp":220},"moves":["Thunderbolt","Hydro Pump","Thunder Wave","Substitute"]},
     "NU Showdown Usage": {"ability":"Volt Absorb","item":"Leftovers","nature":"Modest","evs":{"hp":4,"sa":252,"sp":252},"moves":["Hydro Pump","Ice Beam","Thunder Wave","Thunderbolt"]}
   },
   "Lanturn": {
@@ -1238,8 +1236,7 @@ var SETDEX_ADV = {
     "LC Offensive": {"level":5,"ability":"Rough Skin","item":"Salac Berry","nature":"Modest","ivs":{"at":30,"sa":30},"evs":{"sa":240,"sp":236},"moves":["Hydro Pump","Crunch","Hidden Power Grass","Substitute"]}
   },
   "Sharpedo": {
-    "UU Special Sweeper": {"ability":"Rough Skin","item":"Salac Berry","nature":"Modest","evs":{"sa":252,"sd":4,"sp":252},"moves":["Hydro Pump","Ice Beam","Crunch","Endure"]},
-    "UU Choice Band": {"ability":"Rough Skin","item":"Choice Band","nature":"Lonely","ivs":{"hp":30,"at":30,"df":30,"sa":30,"sd":30},"evs":{"at":252,"sd":4,"sp":252},"moves":["Hidden Power Flying","Earthquake","Hydro Pump","Frustration"]}
+    "UU Sharknado": {"ability":"Rough Skin","item":"Salac Berry","nature":"Timid","evs":{"hp":4,"sa":252,"sp":252},"moves":["Hydro Pump","Ice Beam","Crunch","Endure"]}
   },
   "Wailmer": {
     "LC Mixed Bulky Attacker": {"level":5,"ability":"Water Veil","item":"Sitrus Berry","nature":"Sassy","ivs":{"at":30,"sa":30},"evs":{"hp":36,"at":40,"df":76,"sa":120,"sd":236},"moves":["Surf","Earthquake","Hidden Power Grass","Self-Destruct"]},
@@ -1370,8 +1367,7 @@ var SETDEX_ADV = {
   "Glalie": {
     "UU Spikes": {"ability":"Inner Focus","item":"Leftovers","nature":"Jolly","ivs":{"at":30,"sa":30},"evs":{"hp":252,"at":4,"sp":252},"moves":["Spikes","Explosion","Earthquake","Hidden Power Grass"]},
     "NU Bulky Spikes": {"ability":"Inner Focus","item":"Leftovers","nature":"Naive","evs":{"hp":252,"at":4,"sp":252},"moves":["Spikes","Taunt","Ice Beam","Explosion"]},
-    "NU Physical Spikes": {"ability":"Inner Focus","item":"Leftovers","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Spikes","Earthquake","Shadow Ball","Explosion"]},
-    "OU Showdown Usage": {"ability":"Inner Focus","item":"Salac Berry","nature":"Timid","evs":{"hp":40,"sd":252,"sp":216},"moves":["Spikes","Explosion","Taunt","Ice Beam"]}
+    "NU Physical Spikes": {"ability":"Inner Focus","item":"Leftovers","nature":"Jolly","evs":{"at":252,"df":4,"sp":252},"moves":["Spikes","Earthquake","Shadow Ball","Explosion"]}
   },
   "Sealeo": {
     "PU Tank": {"ability":"Thick Fat","item":"Leftovers","nature":"Modest","ivs":{"at":2,"sa":30},"evs":{"hp":40,"sa":252,"sp":216},"moves":["Surf","Ice Beam","Encore","Substitute"]},
