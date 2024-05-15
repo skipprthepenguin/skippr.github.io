@@ -4058,7 +4058,7 @@ var BW_PATCH = {
         types: ['Ice', 'Flying'],
         bs: { hp: 80, at: 60, df: 75, sa: 95, sd: 135, sp: 105 },
         weightkg: 148,
-        abilities: { 0: 'Levitate' },
+        abilities: { 0: 'Snow Warning' },
         gender: 'N'
     },
     Cubchoo: {
@@ -6303,18 +6303,18 @@ var SM_PATCH = {
     Arbok: { bs: { at: 95 } },
     Ariados: { bs: { sd: 70 } },
     Beartic: { bs: { at: 130 } },
-    Chimecho: { bs: { hp: 75, df: 80, sd: 90 } },
-    Corsola: { bs: { hp: 65, df: 95, sd: 95 } },
+    Chimecho: { bs: { hp: 90, df: 80, sd: 90 } },
+    Corsola: { bs: { hp: 85, df: 95, sd: 95 } },
     'Crucibelle-Mega': { bs: { sa: 91, sp: 108 } },
     Crustle: { bs: { at: 105 } },
-    Cryogonal: { bs: { hp: 80, df: 50 } },
-    Delcatty: { bs: { sp: 90 } },
+    Cryogonal: { bs: { hp: 80, df: 75 } },
+    Delcatty: { bs: { sp: 104 } },
     Diglett: { otherFormes: ['Diglett-Alola'] },
     Dodrio: { bs: { sp: 110 } },
     Dugtrio: { bs: { at: 100 }, otherFormes: ['Dugtrio-Alola'] },
     Eevee: { otherFormes: ['Eevee-Starter'] },
     Electrode: { bs: { sp: 150 } },
-    Exeggutor: { bs: { sd: 75 }, otherFormes: ['Exeggutor-Alola'] },
+    Exeggutor: { bs: { sd: 80 }, otherFormes: ['Exeggutor-Alola'] },
     'Farfetch\u2019d': { bs: { at: 90 } },
     Gengar: { abilities: { 0: 'Cursed Body' } },
     Geodude: { otherFormes: ['Geodude-Alola'] },
@@ -6324,10 +6324,10 @@ var SM_PATCH = {
     Grimer: { otherFormes: ['Grimer-Alola'] },
     Illumise: { bs: { df: 75, sd: 85 } },
     Lunatone: { bs: { hp: 90 } },
-    Magcargo: { bs: { hp: 60, sa: 90 } },
+    Magcargo: { bs: { hp: 80, sa: 115 } },
     Mantine: { bs: { hp: 85 } },
     Marowak: { otherFormes: ['Marowak-Alola', 'Marowak-Alola-Totem'] },
-    Masquerain: { bs: { sa: 100, sp: 80 } },
+    Masquerain: { bs: { sa: 100, sp: 85 } },
     Meowth: { otherFormes: ['Meowth-Alola'] },
     Muk: { otherFormes: ['Muk-Alola'] },
     Necturna: { bs: { sp: 58 } },
@@ -6355,7 +6355,7 @@ var SM_PATCH = {
     Sandshrew: { otherFormes: ['Sandshrew-Alola'] },
     Sandslash: { otherFormes: ['Sandslash-Alola'] },
     Solrock: { bs: { hp: 90 } },
-    Swellow: { bs: { sa: 75 } },
+    Swellow: { bs: { sa: 85 } },
     Volbeat: { bs: { df: 75, sd: 85 } },
     Vulpix: { otherFormes: ['Vulpix-Alola'] },
     Woobat: { bs: { hp: 65 } },
@@ -9830,21 +9830,21 @@ var SV_PATCH = {
         weightkg: 12,
         abilities: { 0: 'Reckless' }
     },
-    Poisnus: {
+    Poisonus: {
         types: ['Poison', 'Flying'],
         bs: { hp: 109, at: 105, df: 80, sa: 115, sd: 90, sp: 81 },
         abilities: { 0: 'Magic Bounce' },
         weightkg: 100,
         otherFormes: [
-            'Poisnus-Therian',
+            'Poisonus-Therian',
         ]
     },
-    'Poisnus-Therian': {
+    'Poisonus-Therian': {
         types: ['Poison', 'Flying'],
         bs: { hp: 109, at: 125, df: 90, sa: 85, sd: 80, sp: 91 },
         abilities: { 0: 'Magic Guard' },
         weightkg: 100,
-        baseSpecies: 'Poisnus'
+        baseSpecies: 'Poisonus'
     },
     Poltchageist: {
         types: ['Grass', 'Ghost'],
