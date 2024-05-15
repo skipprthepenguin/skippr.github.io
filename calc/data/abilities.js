@@ -339,6 +339,7 @@ var SV = SS.concat([
     'Embody Aspect (Hearthflame)',
     'Embody Aspect (Teal)',
     'Embody Aspect (Wellspring)',
+    'Frigid Inspiration',
     'Good as Gold',
     'Guard Dog',
     'Hadron Engine',

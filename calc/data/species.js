@@ -1226,7 +1226,7 @@ var GSC_PATCH = {
     },
     Magcargo: {
         types: ['Fire', 'Rock'],
-        bs: { hp: 80, at: 50, df: 120, sa: 115, sd: 100, sp: 630 },
+        bs: { hp: 80, at: 50, df: 120, sa: 115, sd: 100, sp: 60 },
         weightkg: 55
     },
     Mantine: {
