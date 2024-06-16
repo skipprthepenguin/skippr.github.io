@@ -10223,11 +10223,13 @@ var SV_PATCH = {
     "Vanilluxe-Jolteon": {
         types: ["Ice", 'Electric'],
         bs: { hp: 69, at: 75, df: 68, sa: 110, sd: 95, sp: 113 },
+        abilities: { 0: 'Snow Warning' },
         weightkg: 10
     },
     "Lucario-Zoroak-Hisui": {
         types: ["Fighting", "Ghost"],
         bs: { hp: 66, at: 103, df: 63, sa: 118, sd: 66, sp: 103 },
+        abilities: { 0: 'Inner Focus' },
         weightkg: 10
     },
     "Fearow-Urshifu-Single": {
@@ -10239,26 +10241,31 @@ var SV_PATCH = {
     "Pyroar-Regidrago": {
         types: ["Fire", "Dragon"],
         bs: { hp: 124, at: 89, df: 57, sa: 106, sd: 60, sp: 88 },
+        abilities: { 0: 'Dragon\'s Maw' },
         weightkg: 10
     },
     "Florges-Orthworm": {
         types: ["Fairy", "Steel"],
         bs: { hp: 75, at: 78, df: 119, sa: 94, sd: 121, sp: 68 },
+        abilities: { 0: 'Earth Eater' },
         weightkg: 10
     },
     "Alomomola-Muk": {
         types: ["Water", "Poison"],
         bs: { hp: 145, at: 95, df: 76, sa: 48, sd: 63, sp: 55 },
+        abilities: { 0: 'Regenerator' },
         weightkg: 10
     },
     "Oinkologne-Lurantis": {
         types: ["Normal", "Grass"],
         bs: { hp: 96, at: 103, df: 85, sa: 66, sd: 83, sp: 51 },
+        abilities: { 0: 'Thick Fat' },
         weightkg: 10
     },
     "Noctowl-Camerupt": {
         types: ["Flying", "Ground"],
         bs: { hp: 90, at: 83, df: 63, sa: 92, sd: 89, sp: 50 },
+        abilities: { 0: 'Tinted Lens' },
         weightkg: 10
     },
     "Hawlucha-Tauros-Paldea-Blaze": {
@@ -10274,6 +10281,7 @@ var SV_PATCH = {
     "Sylveon-Flygon": {
         types: ["Fairy", "Dragon"],
         bs: { hp: 90, at: 88, df: 75, sa: 100, sd: 113, sp: 86 },
+        abilities: { 0: 'Pixilate' },
         weightkg: 10
     },
     "Houndstone-Scizor": {
