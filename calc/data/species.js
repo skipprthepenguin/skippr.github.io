@@ -10335,6 +10335,216 @@ var SV_PATCH = {
         types: ["Psychic", "Dragon"],
         bs: { hp: 69, at: 100, df: 88, sa: 132, sd: 93, sp: 39 },
         weightkg: 10
+    },
+    "Haunter-Cyclizar": {
+        types: ["Ghost", "Normal"],
+        bs: { hp: 53, at: 80, df: 58, sa: 105, sd: 58, sp: 112 },
+        weightkg: 10
+    },
+    "Xatu-Liepard": {
+        types: ["Psychic", "Dark"],
+        bs: { hp: 64, at: 83, df: 56, sa: 92, sd: 63, sp: 102 },
+        weightkg: 10
+    },
+    "Primarina-Noivern": {
+        types: ["Water", "Dragon"],
+        bs: { hp: 81, at: 71, df: 78, sa: 116, sd: 104, sp: 102 },
+        weightkg: 10
+    },
+    "Maractus-Sandy Shocks": {
+        types: ["Grass", "Ground"],
+        bs: { hp: 78, at: 82, df: 87, sa: 111, sd: 73, sp: 87 },
+        weightkg: 10
+    },
+    "Falinks-Stonjurner": {
+        types: ["Fighting", "Rock"],
+        bs: { hp: 76, at: 116, df: 123, sa: 53, sd: 46, sp: 71 },
+        weightkg: 10
+    },
+    "Copperajah-Drifblim": {
+        types: ["Steel", "Flying"],
+        bs: { hp: 131, at: 96, df: 52, sa: 83, sd: 64, sp: 63 },
+        weightkg: 10
+    },
+    "Umbreon-Weezing": {
+        types: ["Dark", "Poison"],
+        bs: { hp: 85, at: 81, df: 116, sa: 68, sd: 110, sp: 61 },
+        weightkg: 10
+    },
+    "Arcanine-Golem-Alola": {
+        types: ["Fire", "Electric"],
+        bs: { hp: 86, at: 116, df: 88, sa: 68, sd: 110, sp: 61 },
+        weightkg: 10
+    },
+    "Granbull-Great Tusk": {
+        types: ["Fairy", "Fighting"],
+        bs: { hp: 98, at: 127, df: 112, sa: 57, sd: 57, sp: 73 },
+        weightkg: 10
+    },
+    "Chandelure-Accelgor": {
+        types: ["Ghost", "Bug"],
+        bs: { hp: 66, at: 65, df: 56, sa: 130, sd: 80, sp: 123 },
+        weightkg: 10
+    },
+    "Gogoat-Aggron": {
+        types: ["Grass", "Rock"],
+        bs: { hp: 105, at: 106, df: 140, sa: 84, sd: 74, sp: 56 },
+        weightkg: 10
+    },
+    "Vaporeon-Clodsire": {
+        types: ["Water", "Ground"],
+        bs: { hp: 130, at: 71, df: 60, sa: 88, sd: 96, sp: 35 },
+        weightkg: 10
+    },
+    "Drampa-Tornadus-Incarnate": {
+        types: ["Normal", "Flying"],
+        bs: { hp: 78, at: 96, df: 75, sa: 131, sd: 87, sp: 86 },
+        weightkg: 10
+    },
+    "Quaquaval-Mabosstiff": {
+        types: ["Water", "Dark"],
+        bs: { hp: 83, at: 120, df: 86, sa: 76, sd: 73, sp: 85 },
+        weightkg: 10
+    },
+    "Seviper-Electabuzz": {
+        types: ["Poison", "Electric"],
+        bs: { hp: 70, at: 88, df: 58, sa: 98, sd: 68, sp: 91 },
+        weightkg: 10
+    },
+    "Uxie-Galarian Stunfisk": {
+        types: ["Psychic", "Steel"],
+        bs: { hp: 86, at: 79, df: 109, sa: 72, sd: 114, sp: 53 },
+        weightkg: 10
+    },
+    "Wobbuffet-Whimsicott": {
+        types: ["Psychic", "Fairy"],
+        bs: { hp: 146, at: 55, df: 76, sa: 47, sd: 63, sp: 88 },
+        weightkg: 10
+    },
+    "Melmetal-Centiskorch": {
+        types: ["Steel", "Bug"],
+        bs: { hp: 123, at: 124, df: 91, sa: 83, sd: 73, sp: 54 },
+        weightkg: 10,
+        abilities: { 0: 'Flash Fire' }
+    },
+    "Eelektross-Diancie:": {
+        types: ["Electric", "Fairy"],
+        bs: { hp: 73, at: 105, df: 126, sa: 103, sd: 103, sp: 50 },
+        weightkg: 10,
+        abilities: { 0: 'Levitate' }
+    },
+    "Dragonite-Absol": {
+        types: ["Dragon", "Dark"],
+        bs: { hp: 82, at: 131, df: 71, sa: 91, sd: 86, sp: 76 },
+        weightkg: 10
+    },
+    "Persian-Weavile": {
+        types: ["Normal", "Ice"],
+        bs: { hp: 66, at: 103, df: 63, sa: 58, sd: 71, sp: 121 },
+        weightkg: 10,
+        abilities: { 0: 'Technician' }
+    },
+    "Azumarill-Donphan": {
+        types: ["Water", "Ground"],
+        bs: { hp: 96, at: 96, df: 106, sa: 60, sd: 73, sp: 50 },
+        weightkg: 10,
+        abilities: { 0: 'Sap Sipper' }
+    },
+    "Magmortar-Nidoking": {
+        types: ["Fire", "Ground"],
+        bs: { hp: 77, at: 99, df: 73, sa: 111, sd: 88, sp: 84 },
+        weightkg: 10,
+        abilities: { 0: 'Sheer Force' }
+    },
+    "Exeggutor-Ariados": {
+        types: ["Grass", "Poison"],
+        bs: { hp: 86, at: 91, df: 75, sa: 103, sd: 73, sp: 45 },
+        weightkg: 10
+    },
+    "Tatsugiri-Volcarona": {
+        types: ["Dragon", "Fire"],
+        bs: { hp: 73, at: 56, df: 63, sa: 125, sd: 98, sp: 94 },
+        weightkg: 10,
+        abilities: { 0: 'Storm Drain' }
+    },
+    "Thwackey-Stakataka": {
+        types: ["Grass", "Steel"],
+        bs: { hp: 67, at: 115, df: 164, sa: 54, sd: 73, sp: 35 },
+        weightkg: 10,
+        abilities: { 0: 'Grassy Surge' }
+    },
+    "Mesprit-Garganacl": {
+        types: ["Psychic", "Rock"],
+        bs: { hp: 86, at: 101, df: 121, sa: 85, sd: 100, sp: 50 },
+        weightkg: 10,
+        abilities: { 0: 'Levitate' }
+    },
+    "Comfey-Ting-Lu": {
+        types: ["Fairy", "Ground"],
+        bs: { hp: 85, at: 90, df: 113, sa: 73, sd: 100, sp: 63 },
+        weightkg: 10,
+        abilities: { 0: 'Triage' }
+    },
+    "Wailord-Glimmora": {
+        types: ["Water", "Poison"],
+        bs: { hp: 141, at: 66, df: 75, sa: 103, sd: 57, sp: 77 },
+        weightkg: 10
+    },
+    "Darmanitan-Barraskewda": {
+        types: ["Fire", "Water"],
+        bs: { hp: 90, at: 128, df: 58, sa: 40, sd: 43, sp: 122 },
+        weightkg: 10
+    },
+    "Thievul-Swanna": {
+        types: ["Dark", "Flying"],
+        bs: { hp: 71, at: 77, df: 61, sa: 87, sd: 82, sp: 95 },
+        weightkg: 10
+    },
+    "Stoutland-Sawk": {
+        types: ["Normal", "Fighting"],
+        bs: { hp: 81, at: 120, df: 80, sa: 40, sd: 85, sp: 83 },
+        weightkg: 10
+    },
+    "Rapidash-Zeraora": {
+        types: ["Fire", "Electric"],
+        bs: { hp: 72, at: 108, df: 73, sa: 87, sd: 80, sp: 130 },
+        weightkg: 10
+    },
+    "Mantine-Pecharunt": {
+        types: ["Water", "Ghost"],
+        bs: { hp: 86, at: 72, df: 130, sa: 82, sd: 122, sp: 82 },
+        weightkg: 10
+    },
+    "Cryogonal-Walking Wake": {
+        types: ["Ice", "Dragon"],
+        bs: { hp: 86, at: 72, df: 77, sa: 105, sd: 117, sp: 107 },
+        weightkg: 10
+    },
+    "Bronzong-Dachsbun": {
+        types: ["Steel", "Fairy"],
+        bs: { hp: 63, at: 83, df: 115, sa: 69, sd: 104, sp: 74 },
+        weightkg: 10,
+        abilities: { 0: 'Well-Baked Body' }
+    },
+    "Munkidori-Serperior": {
+        types: ["Poison", "Grass"],
+        bs: { hp: 83, at: 75, df: 85, sa: 111, sd: 91, sp: 110 },
+        weightkg: 10
+    },
+    "Iron Treads-Paldean-Tauros": {
+        types: ["Ground", "Fighting"],
+        bs: { hp: 85, at: 110, df: 110, sa: 58, sd: 70, sp: 102 },
+        weightkg: 10
+    },
+    "Morgrem-Pidgeot": {
+        types: ["Dark", "Flying"],
+        bs: { hp: 71, at: 73, df: 65, sa: 73, sd: 60, sp: 90 },
+        weightkg: 10
+    },
+    "Bouffalant-Relicanth": {
+        types: ["Normal", "Rock"],
+        bs: { hp: 96, at: 96, df: 118, sa: 41, sd: 85, sp: 55 },
+        weightkg: 10
     }
 };
 var SV = (0, util_1.extend)(true, {}, SS, SV_PATCH, PLA_PATCH);
