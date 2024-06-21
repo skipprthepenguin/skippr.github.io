@@ -7870,8 +7870,8 @@ var SS_PATCH = {
         baseSpecies: 'Copperajah'
     },
     'Corsola-Galar': {
-        types: ['Ghost'],
-        bs: { hp: 60, at: 55, df: 100, sa: 65, sd: 100, sp: 30 },
+        types: ['Ghost', 'Rock'],
+        bs: { hp: 80, at: 55, df: 90, sa: 65, sd: 90, sp: 30 },
         weightkg: 0.5,
         abilities: { 0: 'Weak Armor' },
         nfe: true,
