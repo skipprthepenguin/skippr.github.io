@@ -10553,6 +10553,182 @@ var SV_PATCH = {
         types: ["Normal", "Rock"],
         bs: { hp: 96, at: 96, df: 118, sa: 41, sd: 85, sp: 55 },
         weightkg: 10
+    },
+    "Braviary-Hisui-Indeedee-M": {
+        types: ["Psychic", "Normal"],
+        bs: { hp: 93, at: 71, df: 60, sa: 109, sd: 78, sp: 85 },
+        weightkg: 10
+    },
+    "Octillery-Urshifu-Single": {
+        types: ["Water", "Dark"],
+        bs: { hp: 83, at: 121, df: 91, sa: 91, sd: 70, sp: 79 },
+        weightkg: 10
+    },
+    "Ambipom-Brambleghast": {
+        types: ["Normal", "Ghost"],
+        bs: { hp: 68, at: 110, df: 68, sa: 66, sd: 67, sp: 98 },
+        weightkg: 10
+    },
+    "Raging Bolt- Aurorus": {
+        types: ["Electric", "Ice"],
+        bs: { hp: 124, at: 75, df: 78, sa: 124, sd: 90, sp: 63 },
+        weightkg: 10
+    },
+    "Zoroark-Kilowattrel": {
+        types: ["Dark", "Flying"],
+        bs: { hp: 63, at: 81, df: 60, sa: 115, sd: 60, sp: 118 },
+        weightkg: 10
+    },
+    "Decidueye-Hisui-Sudowoodo": {
+        types: ["Grass", "Rock"],
+        bs: { hp: 84, at: 104, df: 103, sa: 73, sd: 85, sp: 40 },
+        weightkg: 10
+    },
+    "Dachsbun-Sandslash-Alola": {
+        types: ["Grass", "Rock"],
+        bs: { hp: 84, at: 104, df: 103, sa: 73, sd: 85, sp: 40 },
+        weightkg: 10
+    },
+    "Squawkabilly-Golem": {
+        types: ["Flying", "Ground"],
+        bs: { hp: 81, at: 112, df: 103, sa: 48, sd: 55, sp: 60 },
+        weightkg: 10
+    },
+    "Dragonite-Dubwool": {
+        types: ["Dragon", "Normal"],
+        bs: { hp: 84, at: 98, df: 98, sa: 86, sd: 96, sp: 85 },
+        weightkg: 10,
+        abilities: { 0: 'Inner Focus' }
+    },
+    "Koomo-o-Sandaconda": {
+        types: ["Dragon", "Ground"],
+        bs: { hp: 74, at: 108, df: 125, sa: 88, sd: 93, sp: 75 },
+        weightkg: 10,
+        abilities: { 0: 'Bulletproof' }
+    },
+    "Yanmega-Mismagius": {
+        types: ["Bug", "Ghost"],
+        bs: { hp: 77, at: 65, df: 68, sa: 112, sd: 72, sp: 101 },
+        weightkg: 10,
+        abilities: { 0: 'Speed Boost' }
+    },
+    "Archaludon-Vespiquen": {
+        types: ["Steel", "Flying"],
+        bs: { hp: 83, at: 88, df: 111, sa: 110, sd: 77, sp: 55 },
+        weightkg: 10,
+        abilities: { 0: 'Stamina' }
+    },
+    "Alcremie-Suicune": {
+        types: ["Fairy", "Water"],
+        bs: { hp: 76, at: 70, df: 101, sa: 103, sd: 119, sp: 78 },
+        weightkg: 10,
+        abilities: { 0: 'Sweet Veil' }
+    },
+    "Persian-Absol": {
+        types: ["Normal", "Dark"],
+        bs: { hp: 65, at: 110, df: 60, sa: 68, sd: 63, sp: 88 },
+        weightkg: 10,
+        abilities: { 0: 'Limber' }
+    },
+    "Guzzlord-Vileplume": {
+        types: ["Dark", "Poison"],
+        bs: { hp: 173, at: 87, df: 74, sa: 101, sd: 65, sp: 47 },
+        weightkg: 10,
+        abilities: { 0: 'Beast Boost' }
+    },
+    "Glalie-Electabuzz": {
+        types: ["Ice", "Electric"],
+        bs: { hp: 75, at: 82, df: 64, sa: 85, sd: 81, sp: 96 },
+        weightkg: 10,
+        abilities: { 0: 'Inner Focus' }
+    },
+    "Snorlax-Meganium": {
+        types: ["Normal", "Grass"],
+        bs: { hp: 133, at: 91, df: 88, sa: 71, sd: 106, sp: 63 },
+        weightkg: 10
+    },
+    "Samurott-Tapu Bulu": {
+        types: ["Water", "Fairy"],
+        bs: { hp: 86, at: 120, df: 105, sa: 100, sd: 78, sp: 73 },
+        weightkg: 10
+    },
+    "Charizard-Hydreigon": {
+        types: ["Fire", "Dragon"],
+        bs: { hp: 82, at: 98, df: 86, sa: 114, sd: 86, sp: 98 },
+        weightkg: 10
+    },
+    "Polteageist-Bastiodon": {
+        types: ["Ghost", "Steel"],
+        bs: { hp: 60, at: 56, df: 133, sa: 105, sd: 122, sp: 43 },
+        weightkg: 10
+    },
+    "Unfezant-Meowscarada": {
+        types: ["Flying", "Dark"],
+        bs: { hp: 78, at: 111, df: 73, sa: 70, sd: 60, sp: 113 },
+        weightkg: 10
+    },
+    "Houndoom-Iron Moth": {
+        types: ["Dark", "Poison"],
+        bs: { hp: 78, at: 111, df: 73, sa: 70, sd: 60, sp: 113 },
+        weightkg: 10
+    },
+    "Rotom-Heat-Uxie": {
+        types: ["Electric", "Psychic"],
+        bs: { hp: 78, at: 111, df: 73, sa: 70, sd: 60, sp: 113 },
+        weightkg: 10
+    },
+    "Machoke-Stonjourner": {
+        types: ["Fighting", "Rock"],
+        bs: { hp: 86, at: 116, df: 113, sa: 40, sd: 46, sp: 61 },
+        weightkg: 10
+    },
+    "Zoroark-Hisui-Noivern": {
+        types: ["Normal", "Dragon"],
+        bs: { hp: 65, at: 80, df: 73, sa: 115, sd: 66, sp: 118 },
+        weightkg: 10,
+        abilities: { 0: 'Frisk' }
+    },
+    "Great Tusk-Kabutops": {
+        types: ["Ground", "Water"],
+        bs: { hp: 96, at: 120, df: 113, sa: 57, sd: 58, sp: 82 },
+        weightkg: 10,
+        abilities: { 0: 'Battle Armor' }
+    },
+    "Kleavor-Azelf": {
+        types: ["Bug", "Psychic"],
+        bs: { hp: 71, at: 128, df: 78, sa: 71, sd: 70, sp: 105 },
+        weightkg: 10,
+        abilities: { 0: 'Sharpness' }
+    },
+    "Cutifly-Haunter": {
+        types: ["Bug", "Poison"],
+        bs: { hp: 41, at: 48, df: 43, sa: 75, sd: 45, sp: 91 },
+        weightkg: 10,
+        abilities: { 0: 'Honey Gather' }
+    },
+    "Arcanine-Hisui-Golem-Alola": {
+        types: ["Fire", "Electric"],
+        bs: { hp: 90, at: 118, df: 113, sa: 81, sd: 75, sp: 60 },
+        weightkg: 10,
+        abilities: { 0: 'Galvanize' }
+    },
+    "Keldeo-Accelgor": {
+        types: ["Water", "Bug"],
+        bs: { hp: 87, at: 70, df: 56, sa: 119, sd: 80, sp: 132 },
+        weightkg: 10,
+        abilities: { 0: 'Unburden' }
+    },
+    "Linoone-Sirfetch\u2019d": {
+        types: ["Normal", "Fighting"],
+        bs: { hp: 72, at: 113, df: 83, sa: 56, sd: 68, sp: 76 },
+        weightkg: 10,
+        abilities: { 0: 'Scrappy' }
+    },
+    "Swalot-Parasect": {
+        types: ["Poison", "Grass"],
+        bs: { hp: 86, at: 87, df: 81, sa: 68, sd: 82, sp: 38 },
+        weightkg: 10,
+        abilities: { 0: 'Liquid Ooze' }
     }
 };
 var SV = (0, util_1.extend)(true, {}, SS, SV_PATCH, PLA_PATCH);
