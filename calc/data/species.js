@@ -2072,6 +2072,7 @@ var ADV_PATCH = {
         abilities: { 0: 'Synchronize' }
     },
     'Gardevoir-Olympios': {
+        types: ['Ground', 'Fairy'],
         bs: { hp: 68, at: 65, df: 70, sa: 125, sd: 115, sp: 80 },
         weightkg: 48.4,
         abilities: { 0: 'Competitive' },
