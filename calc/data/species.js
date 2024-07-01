@@ -10378,7 +10378,8 @@ var SV_PATCH = {
     "Umbreon-Weezing": {
         types: ["Dark", "Poison"],
         bs: { hp: 85, at: 81, df: 116, sa: 68, sd: 110, sp: 61 },
-        weightkg: 10
+        weightkg: 10,
+        abilities: { 0: 'Leviate' }
     },
     "Arcanine-Golem-Alola": {
         types: ["Fire", "Electric"],
@@ -10730,6 +10731,48 @@ var SV_PATCH = {
         bs: { hp: 86, at: 87, df: 81, sa: 68, sd: 82, sp: 38 },
         weightkg: 10,
         abilities: { 0: 'Liquid Ooze' }
+    },
+    "Gogoat-Cinderace": {
+        types: ["Grass", "Fire"],
+        bs: { hp: 108, at: 110, df: 70, sa: 86, sd: 79, sp: 102 },
+        weightkg: 10,
+        abilities: { 0: 'Libero' }
+    },
+    "Registeel-Whimsicott": {
+        types: ["Steel", "Fairy"],
+        bs: { hp: 73, at: 69, df: 106, sa: 75, sd: 125, sp: 94 },
+        weightkg: 10,
+        abilities: { 0: 'Prankster' }
+    },
+    "Rotom-Fan-Walrein": {
+        types: ["Electric", "Water"],
+        bs: { hp: 70, at: 75, df: 95, sa: 101, sd: 101, sp: 72 },
+        weightkg: 10,
+        abilities: { 0: 'Leviate' }
+    },
+    "Aggron-Centiskorch": {
+        types: ["Steel", "Bug"],
+        bs: { hp: 80, at: 113, df: 103, sa: 70, sd: 70, sp: 60 },
+        weightkg: 10,
+        abilities: { 0: 'Flash Fire' }
+    },
+    "Blastoise-Tangrowth": {
+        types: ["Water", "Grass"],
+        bs: { hp: 86, at: 94, df: 116, sa: 93, sd: 86, sp: 59 },
+        weightkg: 10,
+        abilities: { 0: 'Regenerator' }
+    },
+    "Florges-Arboliva": {
+        types: ["Fairy", "Normal"],
+        bs: { hp: 78, at: 67, df: 82, sa: 116, sd: 139, sp: 51 },
+        weightkg: 10,
+        abilities: { 0: 'Seed Sower' }
+    },
+    "Arbok-Turtonator": {
+        types: ["Poison", "Dragon"],
+        bs: { hp: 60, at: 83, df: 113, sa: 73, sd: 81, sp: 50 },
+        weightkg: 10,
+        abilities: { 0: 'Intimidate' }
     }
 };
 var SV = (0, util_1.extend)(true, {}, SS, SV_PATCH, PLA_PATCH);
