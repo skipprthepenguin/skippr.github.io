@@ -56,7 +56,7 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
     }
     if (defender.teraType !== 'Stellar')
         desc.defenderTera = defender.teraType;
-    if (move.named('Photon Geyser', 'Light That Burns the Sky') ||
+    if (move.named('Photon Geyser', 'Light That Burns the Sky', 'Octazooka', 'Ecliptic Punishment') ||
         (move.named('Tera Blast') && attacker.teraType)) {
         move.category = attacker.stats.atk > attacker.stats.spa ? 'Physical' : 'Special';
     }
@@ -76,7 +76,7 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
     }
     var defenderIgnoresAbility = defender.hasAbility('Full Metal Body', 'Prism Armor', 'Shadow Shield', 'Tablets of Ruin', 'Vessel of Ruin');
     var attackerIgnoresAbility = attacker.hasAbility('Mold Breaker', 'Teravolt', 'Turboblaze');
-    var moveIgnoresAbility = move.named('G-Max Drum Solo', 'G-Max Fire Ball', 'G-Max Hydrosnipe', 'Light That Burns the Sky', 'Menacing Moonraze Maelstrom', 'Moongeist Beam', 'Photon Geyser', 'Searing Sunraze Smash', 'Sunsteel Strike');
+    var moveIgnoresAbility = move.named('G-Max Drum Solo', 'G-Max Fire Ball', 'G-Max Hydrosnipe', 'Light That Burns the Sky', 'Menacing Moonraze Maelstrom', 'Moongeist Beam', 'Octazooka', 'Photon Geyser', 'Searing Sunraze Smash', 'Sunsteel Strike');
     if (!defenderIgnoresAbility && !defender.hasAbility('Poison Heal') &&
         (attackerIgnoresAbility || moveIgnoresAbility)) {
         if (attackerIgnoresAbility)
@@ -185,6 +185,11 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         }
         else if (attacker.name.includes('Ogerpon-Wellspring')) {
             type = 'Water';
+        }
+        else if (move.named('Resentful Screech')) {
+            if (attacker.name.includes('Wishiwashi-Resentful')) {
+                move.bp = 100;
+            }
         }
     }
     var hasAteAbilityTypeChange = false;
@@ -519,6 +524,10 @@ function calculateBasePowerSMSSSV(gen, attacker, defender, move, field, hasAteAb
             basePower = move.bp * (defender.hasStatus('psn', 'tox') ? 2 : 1);
             desc.moveBP = basePower;
             break;
+        case 'Smite Path':
+            basePower = move.bp * (defender.hasStatus('par') ? 2 : 1);
+            desc.moveBP = basePower;
+            break;
         case 'Heavy Slam':
         case 'Heat Crash':
             var wr = (0, util_2.getWeight)(attacker, desc, 'attacker') /
@@ -584,6 +593,11 @@ function calculateBasePowerSMSSSV(gen, attacker, defender, move, field, hasAteAb
         case 'Reversal':
             var p = Math.floor((48 * attacker.curHP()) / attacker.maxHP());
             basePower = p <= 1 ? 200 : p <= 4 ? 150 : p <= 9 ? 100 : p <= 16 ? 80 : p <= 32 ? 40 : 20;
+            desc.moveBP = basePower;
+            break;
+        case 'Hard Press':
+            var h = Math.floor((48 * attacker.curHP()) / attacker.maxHP());
+            basePower = h <= 1 ? 130 : h <= 4 ? 110 : h <= 9 ? 88 : h <= 16 ? 66 : h <= 32 ? 44 : 22;
             desc.moveBP = basePower;
             break;
         case 'Natural Gift':
@@ -836,11 +850,24 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         bpMods.push(4915);
         desc.attackerAbility = attacker.ability;
     }
+    if ((attacker.hasAbility('Vampire') && (move.flags.bite))) {
+        bpMods.push(5120);
+        desc.attackerAbility = attacker.ability;
+    }
     if ((attacker.hasAbility('Iron Fist') && move.flags.punch || attacker.hasAbility('Leg Day') && move.flags.kick
         || attacker.hasAbility('Hammer Down') && move.flags.hammer || attacker.hasAbility('Baller') && move.flags.bullet
         || attacker.hasAbility('Heavy Metal') && move.flags.weight || attacker.hasAbility('Illuminate') && move.flags.light
         || attacker.hasAbility('Quick Draw') && move.flags.blast)) {
         bpMods.push(5325);
+        desc.attackerAbility = attacker.ability;
+    }
+    if ((attacker.hasAbility('Combustion') && (move.flags.explosion) || attacker.hasAbility('Big Pecks') && (move.flags.peck))) {
+        bpMods.push(6144);
+        desc.attackerAbility = attacker.ability;
+    }
+    if ((attacker.hasAbility('Bug Out') && (move.hasType('Bug')) || (attacker.hasAbility('Dazzling') && (move.hasType('Fairy')))
+        || (attacker.hasAbility('Haunted Light') && (move.hasType('Ghost'))))) {
+        bpMods.push(6144);
         desc.attackerAbility = attacker.ability;
     }
     if (attacker.hasItem('Punching Glove') && move.flags.punch) {
