@@ -34,6 +34,13 @@ export interface MoveData {
     readonly isPulse?: boolean;
     readonly isSlicing?: boolean;
     readonly isWind?: boolean;
+    readonly iskick?: boolean;
+    readonly ishammer?: boolean;
+    readonly isblast?: boolean;
+    readonly islight?: boolean;
+    readonly isweight?: boolean;
+    readonly ispeck?: boolean;
+    readonly isexplosion?: boolean;
 }
 export declare const MOVES: {
     [name: string]: MoveData;

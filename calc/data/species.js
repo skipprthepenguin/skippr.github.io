@@ -10219,107 +10219,107 @@ var SV_PATCH = {
     Akumu: {
         types: ['Normal', 'Ghost'],
         bs: { hp: 105, at: 115, df: 75, sa: 75, sd: 100, sp: 130 },
-        weightkg: 5.4,
+        weightkg: 14.2,
         abilities: { 0: 'Prankster' }
     },
     Catinator: {
         types: ['Steel', 'Fire'],
         bs: { hp: 110, at: 105, df: 90, sa: 105, sd: 80, sp: 50 },
-        weightkg: 5.4,
+        weightkg: 249.48,
         abilities: { 0: 'Iron Barbs' }
     },
     Gyrmeow: {
         types: ['Steel'],
         bs: { hp: 70, at: 70, df: 60, sa: 70, sd: 55, sp: 65 },
-        weightkg: 5.4,
+        weightkg: 27.22,
         abilities: { 0: 'Iron Barbs' }
     },
     Nyomb: {
         types: ['Steel'],
         bs: { hp: 45, at: 30, df: 35, sa: 30, sd: 35, sp: 40 },
-        weightkg: 5.4,
+        weightkg: 0.91,
         abilities: { 0: 'Iron Barbs' }
     },
     Cerinyx: {
         types: ['Psychic', 'Dark'],
         bs: { hp: 89, at: 131, df: 81, sa: 131, sd: 76, sp: 122 },
-        weightkg: 5.4,
+        weightkg: 699.5755,
         abilities: { 0: 'Neuroforce' }
     },
     Crusocean: {
         types: ['Water', 'Grass'],
         bs: { hp: 125, at: 105, df: 85, sa: 45, sd: 95, sp: 70 },
-        weightkg: 5.4,
+        weightkg: 20,
         abilities: { 0: 'Clear Body' }
     },
     'Eevee-Mega': {
         types: ['Normal'],
         bs: { hp: 65, at: 118, df: 115, sa: 118, sd: 120, sp: 45 },
-        weightkg: 61.5,
+        weightkg: 6.5,
         abilities: { 0: 'Gambler\'s Luck' },
         baseSpecies: 'Eevee'
     },
     'Empoleon-Mega': {
         types: ['Water', 'Steel'],
         bs: { hp: 84, at: 101, df: 104, sa: 141, sd: 121, sp: 94 },
-        weightkg: 61.5,
+        weightkg: 90.5,
         abilities: { 0: 'Emperor\'s Command' },
         baseSpecies: 'Empoleon'
     },
     'Pangoro-Mega': {
         types: ['Dark', 'Fighting'],
         bs: { hp: 95, at: 154, df: 118, sa: 99, sd: 111, sp: 58 },
-        weightkg: 61.5,
+        weightkg: 167,
         abilities: { 0: 'Pallesthesia' },
         baseSpecies: 'Ampharos'
     },
     'Meowth-Mega': {
         types: ['Normal', 'Psychic'],
         bs: { hp: 40, at: 115, df: 75, sa: 110, sd: 70, sp: 160 },
-        weightkg: 61.5,
+        weightkg: 4.2,
         abilities: { 0: 'Hail The Coin' },
         baseSpecies: 'Meowth'
     },
     Jaguaptic: {
         types: ['Psychic', 'Electric'],
         bs: { hp: 51, at: 100, df: 60, sa: 120, sd: 65, sp: 124 },
-        weightkg: 5.4,
+        weightkg: 60,
         abilities: { 0: 'All Seeing' }
     },
     'Lickitung-Hisui': {
         types: ['Dragon'],
         bs: { hp: 70, at: 70, df: 65, sa: 45, sd: 65, sp: 70 },
-        weightkg: 5.4,
+        weightkg: 114,
         abilities: { 0: 'Intimidate' }
     },
     Lickitale: {
         types: ['Dragon', 'Fairy'],
         bs: { hp: 90, at: 117, df: 80, sa: 55, sd: 80, sp: 93 },
-        weightkg: 5.4,
+        weightkg: 165,
         abilities: { 0: 'Intimidate' }
     },
     Magcoral: {
         types: ['Water', 'Rock'],
         bs: { hp: 80, at: 50, df: 100, sa: 115, sd: 120, sp: 60 },
-        weightkg: 5.4,
+        weightkg: 300,
         abilities: { 0: 'Primordial Sea' }
     },
     'Tyrannical Glutton': {
         types: ['Dark', 'Poison'],
         bs: { hp: 143, at: 83, df: 101, sa: 101, sd: 101, sp: 51 },
-        weightkg: 5.4,
+        weightkg: 100,
         abilities: { 0: 'Protosynthesis' }
     },
     'Wishiwashi-Resentful': {
         types: ['Ghost', 'Dark'],
         bs: { hp: 85, at: 110, df: 100, sa: 130, sd: 120, sp: 75 },
-        weightkg: 5.4,
+        weightkg: 78.6,
         abilities: { 0: 'Vengeful Desire' }
     },
     'Wishiwashi-Soulless': {
         types: ['Ghost', 'Dark'],
         bs: { hp: 45, at: 15, df: 15, sa: 25, sd: 16, sp: 60 },
-        weightkg: 5.4,
+        weightkg: 0.3,
         abilities: { 0: 'Vengeful Desire' }
     }
 };
