@@ -176,7 +176,7 @@ var DPP = ADV.concat([
 var BW = DPP.concat([
     'Analytic',
     'Big Pecks',
-    'Bug out',
+    'Bug Out',
     'Contrary',
     'Cursed Body',
     'Defeatist',
