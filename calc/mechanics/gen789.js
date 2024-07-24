@@ -872,6 +872,12 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
     if (attacker.hasItem('Punching Glove') && move.flags.punch) {
         bpMods.push(4506);
     }
+    if (attacker.hasAbility('Emperor\'s Command')) {
+        bpMods.push(4506);
+    }
+    if (defender.hasAbility('Emperor\'s Command')) {
+        bpMods.push(3687);
+    }
     if (gen.num <= 8 && defender.hasAbility('Heatproof') && move.hasType('Fire')) {
         bpMods.push(2048);
         desc.defenderAbility = defender.ability;

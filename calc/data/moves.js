@@ -4705,7 +4705,7 @@ var SV_PATCH = {
         multihit: 10,
         multiaccuracy: true
     },
-    quillrush: {
+    Quillrush: {
         bp: 120,
         type: 'Ground',
         recoil: [1, 3],
