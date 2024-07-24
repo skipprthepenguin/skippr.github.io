@@ -785,7 +785,7 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         (attacker.hasAbility('Mega Launcher') && move.flags.pulse) ||
         (attacker.hasAbility('Strong Jaw') && move.flags.bite) ||
         (attacker.hasAbility('Steely Spirit') && move.hasType('Steel')) ||
-        (attacker.hasAbility('Sharpness') && move.flags.slicing)) {
+        (attacker.hasAbility('Sharpness') || attacker.hasAbility('Sharpened Leek') && move.flags.slicing)) {
         bpMods.push(6144);
         desc.attackerAbility = attacker.ability;
     }
@@ -957,6 +957,10 @@ function calculateAttackSMSSSV(gen, attacker, defender, move, field, desc, isCri
     }
     if (attacker.hasAbility('Hustle') && move.category === 'Physical') {
         attack = (0, util_2.pokeRound)((attack * 3) / 2);
+        desc.attackerAbility = attacker.ability;
+    }
+    if (attacker.hasAbility('Sharpened Leek')) {
+        attack = (0, util_2.pokeRound)((attack * 1.1));
         desc.attackerAbility = attacker.ability;
     }
     var atMods = calculateAtModsSMSSSV(gen, attacker, defender, move, field, desc);
