@@ -210,7 +210,7 @@ function calculateBWXY(gen, attacker, defender, move, field) {
         !(move.named('Facade') && gen.num === 6);
     desc.isBurned = applyBurn;
     var applyFrostbite = attacker.hasStatus('frb');
-    desc.isFrostbited = applyFrostbite;
+    desc.isFrostbitten = applyFrostbite;
     var finalMods = calculateFinalModsBWXY(gen, attacker, defender, move, field, desc, isCritical, typeEffectiveness);
     var finalMod = (0, util_2.chainMods)(finalMods, 41, 131072);
     var isSpread = field.gameType !== 'Singles' &&

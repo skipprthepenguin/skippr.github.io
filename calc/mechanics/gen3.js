@@ -309,7 +309,7 @@ function calculateFinalModsADV(baseDamage, attacker, move, field, desc, isCritic
     }
     if (attacker.hasStatus('frb')) {
         baseDamage = Math.floor(baseDamage / 2);
-        desc.isFrostbited = true;
+        desc.isFrostbitten = true;
     }
     if (!isCritical) {
         var screenMultiplier = field.gameType !== 'Singles' ? 2 / 3 : 1 / 2;

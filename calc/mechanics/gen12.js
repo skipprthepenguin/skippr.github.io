@@ -142,7 +142,7 @@ function calculateRBYGSC(gen, attacker, defender, move, field) {
         }
         if (attacker.hasStatus('frb')) {
             at = Math.floor(at / 2);
-            desc.isFrostbited = true;
+            desc.isFrostbitten = true;
         }
     }
     if (move.named('Explosion', 'Self-Destruct')) {

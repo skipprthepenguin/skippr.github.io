@@ -169,7 +169,7 @@ function calculateDPP(gen, attacker, defender, move, field) {
     }
     if (attacker.hasStatus('frb')) {
         baseDamage = Math.floor(baseDamage * 0.5);
-        desc.isFrostbited = true;
+        desc.isFrostbitten = true;
     }
     baseDamage = calculateFinalModsDPP(baseDamage, attacker, move, field, desc, isCritical);
     var stabMod = 1;
@@ -240,7 +240,7 @@ function calculateDPP(gen, attacker, defender, move, field) {
             }
             if (attacker.hasStatus('frb')) {
                 baseDamage_1 = Math.floor(baseDamage_1 * 0.5);
-                desc.isFrostbited = true;
+                desc.isFrostbitten = true;
             }
             baseDamage_1 = calculateFinalModsDPP(baseDamage_1, attacker, move, field, desc, isCritical);
             var damageMultiplier = 0;

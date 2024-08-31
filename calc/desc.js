@@ -668,7 +668,7 @@ function buildDescription(description, attacker, defender) {
     if (description.isBurned) {
         output += 'burned ';
     }
-    if (description.isFrostbited) {
+    if (description.isFrostbitten) {
         output += 'frostbite ';
     }
     if (description.alliesFainted) {

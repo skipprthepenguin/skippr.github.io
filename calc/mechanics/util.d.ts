@@ -28,7 +28,7 @@ export declare function chainMods(mods: number[], lowerBound: number, upperBound
 export declare function getBaseDamage(level: number, basePower: number, attack: number, defense: number): number;
 export declare function getQPBoostedStat(pokemon: Pokemon, gen?: Generation): StatID;
 export declare function isQPActive(pokemon: Pokemon, field: Field): boolean;
-export declare function getFinalDamage(baseAmount: number, i: number, effectiveness: number, isBurned: boolean, isFrostbited: boolean, stabMod: number, finalMod: number, protect?: boolean): number;
+export declare function getFinalDamage(baseAmount: number, i: number, effectiveness: number, isBurned: boolean, isFrostbitten: boolean, stabMod: number, finalMod: number, protect?: boolean): number;
 export declare function getShellSideArmCategory(source: Pokemon, target: Pokemon): MoveCategory;
 export declare function getWeight(pokemon: Pokemon, desc: RawDesc, role: 'defender' | 'attacker'): number;
 export declare function getStabMod(pokemon: Pokemon, move: Move, desc: RawDesc): number;

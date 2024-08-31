@@ -403,7 +403,7 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
     desc.isBurned = applyBurn;
     var applyFrostbite = attacker.hasStatus('frb') &&
         move.category === 'Special';
-    desc.isFrostbited = applyFrostbite;
+    desc.isFrostbitten = applyFrostbite;
     var finalMods = calculateFinalModsSMSSSV(gen, attacker, defender, move, field, desc, isCritical, typeEffectiveness);
     var protect = false;
     if (field.defenderSide.isProtected &&
