@@ -178,6 +178,7 @@ var FLING_85 = new Set(['TR01', 'TR41', 'TR62', 'TR93', 'TR97', 'TR98']);
 var FLING_80 = new Set([
     'Assault Vest',
     'Blunder Policy',
+    'Bubbled Dome',
     'Chipped Pot',
     'Cracked Pot',
     'Heavy-Duty Boots',

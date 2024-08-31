@@ -46,7 +46,7 @@ var CALC_STATUS = {
 	'Poisoned': 'psn',
 	'Badly Poisoned': 'tox',
 	'Burned': 'brn',
-	'Frostbite': 'frb',
+	'Frostbitten': 'frb',
 	'Asleep': 'slp',
 	'Frozen': 'frz'
 };
