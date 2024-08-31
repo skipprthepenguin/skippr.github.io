@@ -284,7 +284,7 @@ function checkUnnerve(gen, source, target) {
 exports.checkUnnerve = checkUnnerve;
 function checkPetrifyingGaze(gen, source, target) {
     var blocked = target.hasAbility('Clear Body', 'Full Metal Body') || target.hasItem('Clear Amulet');
-    if (source.hasAbility('Unnerve') && source.abilityOn && !blocked) {
+    if (source.hasAbility('Petrifying Gaze') && source.abilityOn && !blocked) {
         if (target.hasAbility('Contrary')) {
             target.boosts.spe = Math.min(6, target.boosts.spe + 1);
         }
