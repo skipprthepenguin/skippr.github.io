@@ -59,19 +59,25 @@ function getRecovery(gen, attacker, defender, move, damage, notation) {
     var ignoresShellBell = gen.num === 3 && move.named('Doom Desire', 'Future Sight');
     if (attacker.hasItem('Shell Bell') && !ignoresShellBell) {
         var max = Math.round(defender.maxHP() / 8);
-        for (var i = 0; i < minD.length; i++) {
-            recovery[0] += Math.min(Math.round(minD[i] * move.hits / 8), max);
-            recovery[1] += Math.min(Math.round(maxD[i] * move.hits / 8), max);
+        for (var i_1 = 0; i_1 < minD.length; i_1++) {
+            recovery[0] += Math.min(Math.round(minD[i_1] * move.hits / 8), max);
+            recovery[1] += Math.min(Math.round(maxD[i_1] * move.hits / 8), max);
         }
     }
     if (move.named('G-Max Finale')) {
         recovery[0] = recovery[1] = Math.round(attacker.maxHP() / 6);
     }
+    if (attacker.hasAbility('Vampire') && move.flags.bite) {
+        for (var i = 0; i < minD.length; i++) {
+            recovery[0] += Math.round(minD[i] * move.hits / 5);
+            recovery[1] += Math.round(maxD[i] * move.hits / 5);
+        }
+    }
     if (move.drain) {
         var percentHealed = move.drain[0] / move.drain[1];
         var max = Math.round(defender.maxHP() * percentHealed);
-        for (var i = 0; i < minD.length; i++) {
-            var range = [minD[i], maxD[i]];
+        for (var i_2 = 0; i_2 < minD.length; i_2++) {
+            var range = [minD[i_2], maxD[i_2]];
             for (var j in recovery) {
                 var drained = Math.round(range[j] * percentHealed);
                 if (attacker.hasItem('Big Root'))
@@ -661,6 +667,9 @@ function buildDescription(description, attacker, defender) {
     output = appendIfSet(output, description.rivalry);
     if (description.isBurned) {
         output += 'burned ';
+    }
+    if (description.isFrostbited) {
+        output += 'Frostbite ';
     }
     if (description.alliesFainted) {
         output += Math.min(5, description.alliesFainted) +

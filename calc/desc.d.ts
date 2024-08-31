@@ -32,6 +32,7 @@ export interface RawDesc {
     isCritical?: boolean;
     isLightScreen?: boolean;
     isBurned?: boolean;
+    isFrostbited?: boolean;
     isProtected?: boolean;
     isReflect?: boolean;
     isBattery?: boolean;

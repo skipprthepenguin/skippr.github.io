@@ -264,6 +264,45 @@ function checkIntimidate(gen, source, target) {
     }
 }
 exports.checkIntimidate = checkIntimidate;
+function checkUnnerve(gen, source, target) {
+    var blocked = target.hasAbility('Clear Body', 'Full Metal Body') || target.hasItem('Clear Amulet');
+    if (source.hasAbility('Unnerve') && source.abilityOn && !blocked) {
+        if (target.hasAbility('Contrary', 'Competitive')) {
+            target.boosts.spa = Math.min(6, target.boosts.spa + 1);
+        }
+        else if (target.hasAbility('Simple')) {
+            target.boosts.spa = Math.max(-6, target.boosts.spa - 2);
+        }
+        else {
+            target.boosts.spa = Math.max(-6, target.boosts.spa - 1);
+        }
+        if (target.hasAbility('Defiant')) {
+            target.boosts.atk = Math.min(6, target.boosts.atk + 2);
+        }
+    }
+}
+exports.checkUnnerve = checkUnnerve;
+function checkPetrifyingGaze(gen, source, target) {
+    var blocked = target.hasAbility('Clear Body', 'Full Metal Body') || target.hasItem('Clear Amulet');
+    if (source.hasAbility('Unnerve') && source.abilityOn && !blocked) {
+        if (target.hasAbility('Contrary')) {
+            target.boosts.spe = Math.min(6, target.boosts.spe + 1);
+        }
+        else if (target.hasAbility('Simple')) {
+            target.boosts.spe = Math.max(-6, target.boosts.spe - 2);
+        }
+        else {
+            target.boosts.spe = Math.max(-6, target.boosts.spe - 1);
+        }
+        if (target.hasAbility('Defiant')) {
+            target.boosts.atk = Math.min(6, target.boosts.atk + 2);
+        }
+        if (target.hasAbility('Competitive')) {
+            target.boosts.spa = Math.min(6, target.boosts.spa + 2);
+        }
+    }
+}
+exports.checkPetrifyingGaze = checkPetrifyingGaze;
 function checkDownload(source, target, wonderRoomActive) {
     var _a;
     if (source.hasAbility('Download')) {
@@ -540,12 +579,14 @@ function isQPActive(pokemon, field) {
         (pokemon.boostedStat !== 'auto'));
 }
 exports.isQPActive = isQPActive;
-function getFinalDamage(baseAmount, i, effectiveness, isBurned, stabMod, finalMod, protect) {
+function getFinalDamage(baseAmount, i, effectiveness, isBurned, isFrostbited, stabMod, finalMod, protect) {
     var damageAmount = Math.floor(OF32(baseAmount * (85 + i)) / 100);
     if (stabMod !== 4096)
         damageAmount = OF32(damageAmount * stabMod) / 4096;
     damageAmount = Math.floor(OF32(pokeRound(damageAmount) * effectiveness));
     if (isBurned)
+        damageAmount = Math.floor(damageAmount / 2);
+    if (isFrostbited)
         damageAmount = Math.floor(damageAmount / 2);
     if (protect)
         damageAmount = pokeRound(OF32(damageAmount * 1024) / 4096);

@@ -167,6 +167,10 @@ function calculateDPP(gen, attacker, defender, move, field) {
         baseDamage = Math.floor(baseDamage * 0.5);
         desc.isBurned = true;
     }
+    if (attacker.hasStatus('frb')) {
+        baseDamage = Math.floor(baseDamage * 0.5);
+        desc.isFrostbited = true;
+    }
     baseDamage = calculateFinalModsDPP(baseDamage, attacker, move, field, desc, isCritical);
     var stabMod = 1;
     if (move.hasType.apply(move, __spreadArray([], __read(attacker.types), false))) {
@@ -233,6 +237,10 @@ function calculateDPP(gen, attacker, defender, move, field) {
             if (attacker.hasStatus('brn') && isPhysical && !attacker.hasAbility('Guts')) {
                 baseDamage_1 = Math.floor(baseDamage_1 * 0.5);
                 desc.isBurned = true;
+            }
+            if (attacker.hasStatus('frb')) {
+                baseDamage_1 = Math.floor(baseDamage_1 * 0.5);
+                desc.isFrostbited = true;
             }
             baseDamage_1 = calculateFinalModsDPP(baseDamage_1, attacker, move, field, desc, isCritical);
             var damageMultiplier = 0;

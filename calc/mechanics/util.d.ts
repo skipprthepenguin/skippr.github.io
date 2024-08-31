@@ -14,6 +14,8 @@ export declare function checkForecast(pokemon: Pokemon, weather?: Weather): void
 export declare function checkItem(pokemon: Pokemon, magicRoomActive?: boolean): void;
 export declare function checkWonderRoom(pokemon: Pokemon, wonderRoomActive?: boolean): void;
 export declare function checkIntimidate(gen: Generation, source: Pokemon, target: Pokemon): void;
+export declare function checkUnnerve(gen: Generation, source: Pokemon, target: Pokemon): void;
+export declare function checkPetrifyingGaze(gen: Generation, source: Pokemon, target: Pokemon): void;
 export declare function checkDownload(source: Pokemon, target: Pokemon, wonderRoomActive?: boolean): void;
 export declare function checkIntrepidSword(source: Pokemon, gen: Generation): void;
 export declare function checkDauntlessShield(source: Pokemon, gen: Generation): void;
@@ -26,7 +28,7 @@ export declare function chainMods(mods: number[], lowerBound: number, upperBound
 export declare function getBaseDamage(level: number, basePower: number, attack: number, defense: number): number;
 export declare function getQPBoostedStat(pokemon: Pokemon, gen?: Generation): StatID;
 export declare function isQPActive(pokemon: Pokemon, field: Field): boolean;
-export declare function getFinalDamage(baseAmount: number, i: number, effectiveness: number, isBurned: boolean, stabMod: number, finalMod: number, protect?: boolean): number;
+export declare function getFinalDamage(baseAmount: number, i: number, effectiveness: number, isBurned: boolean, isFrostbited: boolean, stabMod: number, finalMod: number, protect?: boolean): number;
 export declare function getShellSideArmCategory(source: Pokemon, target: Pokemon): MoveCategory;
 export declare function getWeight(pokemon: Pokemon, desc: RawDesc, role: 'defender' | 'attacker'): number;
 export declare function getStabMod(pokemon: Pokemon, move: Move, desc: RawDesc): number;

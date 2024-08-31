@@ -30,6 +30,10 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
     (0, util_2.checkDownload)(defender, attacker, field.isWonderRoom);
     (0, util_2.checkIntrepidSword)(attacker, gen);
     (0, util_2.checkIntrepidSword)(defender, gen);
+    (0, util_2.checkPetrifyingGaze)(gen, attacker, defender);
+    (0, util_2.checkPetrifyingGaze)(gen, defender, attacker);
+    (0, util_2.checkUnnerve)(gen, attacker, defender);
+    (0, util_2.checkUnnerve)(gen, defender, attacker);
     (0, util_2.checkWindRider)(attacker, field.attackerSide);
     (0, util_2.checkWindRider)(defender, field.defenderSide);
     if (move.named('Meteor Beam', 'Electro Shot')) {
@@ -289,6 +293,7 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
     }
     if ((defender.hasAbility('Wonder Guard') && typeEffectiveness <= 1) ||
         (move.hasType('Grass') && defender.hasAbility('Sap Sipper')) ||
+        (move.hasType('Fairy') && defender.hasAbility('Sweet Tooth')) ||
         (move.hasType('Fire') && defender.hasAbility('Flash Fire', 'Well-Baked Body')) ||
         (move.hasType('Water') && defender.hasAbility('Dry Skin', 'Storm Drain', 'Water Absorb')) ||
         (move.hasType('Electric') &&
@@ -395,7 +400,10 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         move.category === 'Physical' &&
         !attacker.hasAbility('Guts') &&
         !move.named('Facade');
+    var applyFrostbite = attacker.hasStatus('frb') &&
+        move.category === 'Special';
     desc.isBurned = applyBurn;
+    desc.isFrostbited = applyFrostbite;
     var finalMods = calculateFinalModsSMSSSV(gen, attacker, defender, move, field, desc, isCritical, typeEffectiveness);
     var protect = false;
     if (field.defenderSide.isProtected &&
@@ -417,7 +425,7 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
     var damage = [];
     for (var i = 0; i < 16; i++) {
         damage[i] =
-            (0, util_2.getFinalDamage)(baseDamage, i, typeEffectiveness, applyBurn, stabMod, finalMod, protect);
+            (0, util_2.getFinalDamage)(baseDamage, i, typeEffectiveness, applyBurn, applyFrostbite, stabMod, finalMod, protect);
     }
     desc.attackBoost =
         move.named('Foul Play') ? defender.boosts[attackStat] : attacker.boosts[attackStat];
@@ -450,7 +458,7 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
             var newFinalMod = (0, util_2.chainMods)(newFinalMods, 41, 131072);
             var damageMultiplier = 0;
             damage = damage.map(function (affectedAmount) {
-                var newFinalDamage = (0, util_2.getFinalDamage)(newBaseDamage, damageMultiplier, typeEffectiveness, applyBurn, stabMod, newFinalMod, protect);
+                var newFinalDamage = (0, util_2.getFinalDamage)(newBaseDamage, damageMultiplier, typeEffectiveness, applyBurn, applyFrostbite, stabMod, newFinalMod, protect);
                 damageMultiplier++;
                 return affectedAmount + newFinalDamage;
             });

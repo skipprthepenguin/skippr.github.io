@@ -9816,7 +9816,7 @@ var SV_PATCH = {
         types: ['Water', 'Ground'],
         bs: { hp: 85, at: 125, df: 85, sa: 35, sd: 85, sp: 115 },
         weightkg: 12,
-        abilities: { 0: 'Reckless' }
+        abilities: { 0: 'Belligerent Quills' }
     },
     Poisonus: {
         types: ['Poison', 'Flying'],
