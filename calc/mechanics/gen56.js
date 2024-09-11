@@ -717,7 +717,7 @@ function calculateDfModsBWXY(gen, defender, field, desc, hitsPhysical) {
         desc.weather = field.weather;
         desc.isFlowerGiftDefender = true;
     }
-    if (field.hasTerrain('Grassy') && defender.hasAbility('Grass Pelt') && hitsPhysical) {
+    if (field.hasTerrain('Grassy') && defender.hasAbility('Grass Pelt')) {
         dfMods.push(6144);
         desc.defenderAbility = defender.ability;
     }
