@@ -294,10 +294,10 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
     if ((defender.hasAbility('Wonder Guard') && typeEffectiveness <= 1) ||
         (move.hasType('Grass') && defender.hasAbility('Sap Sipper')) ||
         (move.hasType('Fairy') && defender.hasAbility('Sweet Tooth')) ||
-        (move.hasType('Fire') && defender.hasAbility('Flash Fire', 'Well-Baked Body')) ||
-        (move.hasType('Water') && defender.hasAbility('Dry Skin', 'Storm Drain', 'Water Absorb')) ||
+        (move.hasType('Fire') && defender.hasAbility('Flash Fire', 'Well-Baked Body', 'Mighty Fire', 'Heatproof')) ||
+        (move.hasType('Water') && defender.hasAbility('Dry Skin', 'Storm Drain', 'Water Absorb', 'Silent Water')) ||
         (move.hasType('Electric') &&
-            defender.hasAbility('Lightning Rod', 'Motor Drive', 'Volt Absorb')) ||
+            defender.hasAbility('Lightning Rod', 'Motor Drive', 'Volt Absorb', 'Radiating Light')) ||
         (move.hasType('Ground') &&
             !field.isGravity && !move.named('Thousand Arrows') &&
             !defender.hasItem('Iron Ball') && defender.hasAbility('Levitate')) ||
@@ -819,9 +819,13 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
     }
     if ((attacker.hasAbility('Sheer Force') &&
         (move.secondaries || move.named('Jet Punch', 'Order Up')) && !move.isMax) ||
+        (attacker.hasAbility('Willpower') &&
+            (move.secondaries || move.named('Jet Punch', 'Order Up')) && !move.isMax) ||
         (attacker.hasAbility('Sand Force') &&
             field.hasWeather('Sand') && move.hasType('Rock', 'Ground', 'Steel')) ||
         (attacker.hasAbility('Analytic') &&
+            (turnOrder !== 'first' || field.defenderSide.isSwitching === 'out')) ||
+        (attacker.hasAbility('Knowledge') &&
             (turnOrder !== 'first' || field.defenderSide.isSwitching === 'out')) ||
         (attacker.hasAbility('Tough Claws') && move.flags.contact) ||
         (attacker.hasAbility('Punk Rock') && move.flags.sound)) {
@@ -854,6 +858,16 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         bpMods.push(4915);
         desc.attackerAbility = attacker.ability;
     }
+    if (attacker.hasAbility('Turboblaze') && move.hasType('Fire')) {
+        bpMods.push(4915);
+        desc.attackerAbility = attacker.ability;
+    }
+    if (attacker.hasAbility('Power Of Alchemy') && move.hasType('Fire') || attacker.hasAbility('Power Of Alchemy') && move.hasType('Ice') ||
+        attacker.hasAbility('Power Of Alchemy') && move.hasType('Electric') || attacker.hasAbility('Knowledge') && move.hasType('Fire') ||
+        attacker.hasAbility('Knowledge') && move.hasType('Ice') || attacker.hasAbility('Knowledge') && move.hasType('Electric')) {
+        bpMods.push(4915);
+        desc.attackerAbility = attacker.ability;
+    }
     if ((attacker.hasAbility('Vampire') && (move.flags.bite))) {
         bpMods.push(5120);
         desc.attackerAbility = attacker.ability;
@@ -883,11 +897,7 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
     if (defender.hasAbility('Emperor\'s Command')) {
         bpMods.push(3687);
     }
-    if (gen.num <= 8 && defender.hasAbility('Heatproof') && move.hasType('Fire')) {
-        bpMods.push(2048);
-        desc.defenderAbility = defender.ability;
-    }
-    else if (defender.hasAbility('Dry Skin') && move.hasType('Fire')) {
+    if (defender.hasAbility('Dry Skin') && move.hasType('Fire')) {
         bpMods.push(5120);
         desc.defenderAbility = defender.ability;
     }
@@ -1040,10 +1050,6 @@ function calculateAtModsSMSSSV(gen, attacker, defender, move, field, desc) {
     if ((defender.hasAbility('Thick Fat') && move.hasType('Fire', 'Ice')) ||
         (defender.hasAbility('Water Bubble') && move.hasType('Fire')) ||
         (defender.hasAbility('Purifying Salt') && move.hasType('Ghost'))) {
-        atMods.push(2048);
-        desc.defenderAbility = defender.ability;
-    }
-    if (gen.num >= 9 && defender.hasAbility('Heatproof') && move.hasType('Fire')) {
         atMods.push(2048);
         desc.defenderAbility = defender.ability;
     }
@@ -1220,7 +1226,7 @@ function calculateBaseDamageSMSSSV(gen, attacker, defender, basePower, attack, d
             desc.weather = field.weather;
         }
         else if ((field.hasWeather('Sun') && move.hasType('Water')) ||
-            (field.hasWeather('Rain') && move.hasType('Fire'))) {
+            (field.hasWeather('Rain') && move.hasType('Fire') && !attacker.hasAbility('Turboblaze'))) {
             baseDamage = (0, util_2.pokeRound)((0, util_2.OF32)(baseDamage * 2048) / 4096);
             desc.weather = field.weather;
         }

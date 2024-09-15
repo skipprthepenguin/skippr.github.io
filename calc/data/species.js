@@ -1696,7 +1696,7 @@ var ADV_PATCH = {
     Donphan: { abilities: { 0: 'Sturdy' } },
     Dunsparce: { abilities: { 0: 'Serene Grace' } },
     Elekid: { abilities: { 0: 'Static' } },
-    Entei: { abilities: { 0: 'Pressure' } },
+    Entei: { abilities: { 0: 'Mighty Fire' } },
     Espeon: { abilities: { 0: 'Synchronize' } },
     Feraligatr: { abilities: { 0: 'Torrent' } },
     Flaaffy: { abilities: { 0: 'Static' } },
@@ -1742,7 +1742,7 @@ var ADV_PATCH = {
     Quagsire: { abilities: { 0: 'Damp' } },
     Quilava: { abilities: { 0: 'Blaze' } },
     Qwilfish: { abilities: { 0: 'Poison Point' } },
-    Raikou: { abilities: { 0: 'Pressure' } },
+    Raikou: { abilities: { 0: 'Radiating Light' } },
     Remoraid: { abilities: { 0: 'Hustle' } },
     Scizor: { abilities: { 0: 'Swarm' } },
     Sentret: { abilities: { 0: 'Run Away' } },
@@ -1759,7 +1759,7 @@ var ADV_PATCH = {
     Stantler: { abilities: { 0: 'Intimidate' } },
     Steelix: { abilities: { 0: 'Rock Head' } },
     Sudowoodo: { abilities: { 0: 'Sturdy' } },
-    Suicune: { abilities: { 0: 'Pressure' } },
+    Suicune: { abilities: { 0: 'Silent Water' } },
     Sunflora: { abilities: { 0: 'Chlorophyll' } },
     Sunkern: { abilities: { 0: 'Chlorophyll' } },
     Swinub: { abilities: { 0: 'Oblivious' } },
@@ -2939,7 +2939,7 @@ var DPP_PATCH = {
         types: ['Psychic', 'Fighting'],
         bs: { hp: 75, at: 120, df: 75, sa: 120, sd: 75, sp: 115 },
         weightkg: 0.3,
-        abilities: { 0: 'Levitate' },
+        abilities: { 0: 'Willpower' },
         gender: 'N'
     },
     Bastiodon: {
@@ -3431,7 +3431,7 @@ var DPP_PATCH = {
         types: ['Psychic', 'Fairy'],
         bs: { hp: 80, at: 115, df: 110, sa: 115, sd: 100, sp: 90 },
         weightkg: 0.3,
-        abilities: { 0: 'Levitate' },
+        abilities: { 0: 'Emotion' },
         gender: 'N'
     },
     'Mime Jr.': {
@@ -3808,7 +3808,7 @@ var DPP_PATCH = {
         types: ['Psychic', 'Steel'],
         bs: { hp: 105, at: 50, df: 125, sa: 100, sd: 125, sp: 75 },
         weightkg: 0.3,
-        abilities: { 0: 'Levitate' },
+        abilities: { 0: 'Knowledge' },
         gender: 'N'
     },
     Vespiquen: {
