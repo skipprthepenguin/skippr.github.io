@@ -37,7 +37,7 @@ var __values = (this && this.__values) || function(o) {
     };
     throw new TypeError(s ? "Object is not iterable." : "Symbol.iterator is not defined.");
 };
-var e_1, _a, e_2, _b;
+var e_1, _a;
 exports.__esModule = true;
 
 var util_1 = require("../util");
@@ -2392,7 +2392,7 @@ var SM_PATCH = {
     '10,000,000 Volt Thunderbolt': { bp: 195, type: 'Electric', category: 'Special', isZ: true },
     'Acid Downpour': { bp: 1, type: 'Poison', category: 'Physical', isZ: true },
     'All-Out Pummeling': { bp: 1, type: 'Fighting', category: 'Physical', isZ: true },
-    'Baddy Bad': { bp: 90, type: 'Dark', category: 'Special', zp: 175 },
+    'Baddy Bad': { bp: 80, type: 'Dark', category: 'Special', zp: 175 },
     'Baneful Bunker': { bp: 0, type: 'Poison', priority: 4 },
     'Beak Blast': {
         bp: 100,
@@ -2406,7 +2406,7 @@ var SM_PATCH = {
     'Black Hole Eclipse': { bp: 1, type: 'Dark', category: 'Physical', isZ: true },
     'Bloom Doom': { bp: 1, type: 'Grass', category: 'Physical', isZ: true },
     'Bouncy Bubble': {
-        bp: 90,
+        bp: 60,
         type: 'Water',
         drain: [1, 2],
         category: 'Special',
@@ -2414,7 +2414,7 @@ var SM_PATCH = {
     },
     'Breakneck Blitz': { bp: 1, type: 'Normal', category: 'Physical', isZ: true },
     'Buzzy Buzz': {
-        bp: 90,
+        bp: 60,
         type: 'Electric',
         category: 'Special',
         secondaries: true,
@@ -2473,7 +2473,7 @@ var SM_PATCH = {
         zp: 195
     },
     'Floral Healing': { bp: 0, type: 'Fairy' },
-    'Freezy Frost': { bp: 90, type: 'Ice', category: 'Special', zp: 175 },
+    'Freezy Frost': { bp: 100, type: 'Ice', category: 'Special', zp: 175 },
     'Genesis Supernova': {
         bp: 185,
         type: 'Psychic',
@@ -2482,7 +2482,7 @@ var SM_PATCH = {
         isZ: true
     },
     'Gigavolt Havoc': { bp: 1, type: 'Electric', category: 'Physical', isZ: true },
-    'Glitzy Glow': { bp: 90, type: 'Psychic', category: 'Special', zp: 175 },
+    'Glitzy Glow': { bp: 80, type: 'Psychic', category: 'Special', zp: 175 },
     'Guardian of Alola': { bp: 0, type: 'Fairy', category: 'Special', isZ: true },
     'Hydro Vortex': { bp: 1, type: 'Water', category: 'Physical', isZ: true },
     'Ice Hammer': {
@@ -2545,7 +2545,7 @@ var SM_PATCH = {
         isZ: true
     },
     'Revelation Dance': { bp: 90, type: 'Normal', category: 'Special', zp: 175 },
-    'Sappy Seed': { bp: 90, type: 'Grass', category: 'Physical', zp: 175 },
+    'Sappy Seed': { bp: 100, type: 'Grass', category: 'Physical', zp: 175 },
     'Savage Spin-Out': { bp: 1, type: 'Bug', category: 'Physical', isZ: true },
     'Searing Sunraze Smash': {
         bp: 200,
@@ -2565,7 +2565,7 @@ var SM_PATCH = {
     'Shore Up': { bp: 0, type: 'Ground' },
     'Sinister Arrow Raid': { bp: 180, type: 'Ghost', category: 'Physical', isZ: true },
     'Sizzly Slide': {
-        bp: 90,
+        bp: 60,
         type: 'Fire',
         makesContact: true,
         category: 'Physical',
@@ -2586,7 +2586,7 @@ var SM_PATCH = {
         category: 'Physical',
         isZ: true
     },
-    'Sparkly Swirl': { bp: 90, type: 'Fairy', category: 'Special', zp: 175 },
+    'Sparkly Swirl': { bp: 125, type: 'Fairy', category: 'Special', zp: 175 },
     'Splintered Stormshards': { bp: 190, type: 'Rock', category: 'Physical', isZ: true },
     Spotlight: { bp: 0, type: 'Normal', priority: 3 },
     'Stoked Sparksurfer': {
@@ -3565,9 +3565,8 @@ var SS_PATCH = {
         type: 'Fairy',
         makesContact: true,
         category: 'Physical',
-        secondaries: true,
-        zp: 140,
-        maxPower: 130
+        zp: 180,
+        maxPower: 140
     },
     'Steel Beam': {
         bp: 140,
@@ -4143,34 +4142,6 @@ var SS_PATCH = {
     'Zing Zap': { maxPower: 130 }
 };
 var SS = (0, util_1.extend)(true, {}, SM, SS_PATCH);
-var LGPE_MOVES = [
-    'Baddy Bad',
-    'Bouncy Bubble',
-    'Buzzy Buzz',
-    'Freezy Frost',
-    'Glitzy Glow',
-    'Sappy Seed',
-    'Sizzly Slide',
-    'Sparkly Swirl',
-    'Zippy Zap',
-    'Floaty Fall',
-    'Pika Papow',
-    'Splishy Splash',
-    'Veevee Volley',
-];
-try {
-    for (var LGPE_MOVES_1 = __values(LGPE_MOVES), LGPE_MOVES_1_1 = LGPE_MOVES_1.next(); !LGPE_MOVES_1_1.done; LGPE_MOVES_1_1 = LGPE_MOVES_1.next()) {
-        var m = LGPE_MOVES_1_1.value;
-        delete SS[m];
-    }
-}
-catch (e_1_1) { e_1 = { error: e_1_1 }; }
-finally {
-    try {
-        if (LGPE_MOVES_1_1 && !LGPE_MOVES_1_1.done && (_a = LGPE_MOVES_1["return"])) _a.call(LGPE_MOVES_1);
-    }
-    finally { if (e_1) throw e_1.error; }
-}
 var SV_PATCH = {
     'Aerial Ace': { isSlicing: true },
     Aeroblast: { isWind: true, isblast: true },
@@ -5167,11 +5138,11 @@ try {
         gen++;
     }
 }
-catch (e_2_1) { e_2 = { error: e_2_1 }; }
+catch (e_1_1) { e_1 = { error: e_1_1 }; }
 finally {
     try {
-        if (MOVES_1_1 && !MOVES_1_1.done && (_b = MOVES_1["return"])) _b.call(MOVES_1);
+        if (MOVES_1_1 && !MOVES_1_1.done && (_a = MOVES_1["return"])) _a.call(MOVES_1);
     }
-    finally { if (e_2) throw e_2.error; }
+    finally { if (e_1) throw e_1.error; }
 }
 //# sourceMappingURL=moves.js.map
