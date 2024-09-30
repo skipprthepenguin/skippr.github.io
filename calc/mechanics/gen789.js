@@ -1169,6 +1169,10 @@ function calculateDfModsSMSSSV(gen, attacker, defender, move, field, desc, isCri
         dfMods.push(8192);
         desc.defenderAbility = defender.ability;
     }
+    else if (defender.hasAbility('Shell Armor')) {
+        dfMods.push(4916);
+        desc.defenderAbility = defender.ability;
+    }
     var isSwordOfRuinActive = (attacker.hasAbility('Sword of Ruin') || field.isSwordOfRuin) &&
         !defender.hasAbility('Sword of Ruin');
     var isBeadsOfRuinActive = (attacker.hasAbility('Beads of Ruin') || field.isBeadsOfRuin) &&
