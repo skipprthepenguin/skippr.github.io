@@ -5706,7 +5706,7 @@ var XY_PATCH = {
         types: ['Flying', 'Dark'],
         bs: { hp: 65, at: 118, df: 82, sa: 81, sd: 82, sp: 117 },
         weightkg: 15,
-        abilities: { 0: 'Sharpned Leek' },
+        abilities: { 0: 'Sharpened Leek' },
         baseSpecies: 'Farfetch\u2019d'
     },
     'Gallade-Mega': {
@@ -9106,7 +9106,7 @@ var SV_PATCH = {
     },
     Acudraco: {
         types: ['Psychic', 'Dragon'],
-        bs: { hp: 80, at: 110, df: 95, sa: 110, sd: 95, sp: 90 },
+        bs: { hp: 80, at: 110, df: 100, sa: 110, sd: 100, sp: 90 },
         weightkg: 248.2,
         abilities: { 0: 'Power of Alchemy' }
     },
@@ -9638,7 +9638,7 @@ var SV_PATCH = {
     },
     Metadraco: {
         types: ['Steel', 'Dragon'],
-        bs: { hp: 100, at: 120, df: 94, sa: 90, sd: 89, sp: 87 },
+        bs: { hp: 100, at: 130, df: 94, sa: 90, sd: 89, sp: 87 },
         weightkg: 292.7,
         abilities: { 0: 'Reckless' }
     },
@@ -10105,7 +10105,7 @@ var SV_PATCH = {
     },
     Thundraco: {
         types: ['Electric', 'Dragon'],
-        bs: { hp: 91, at: 80, df: 95, sa: 124, sd: 100, sp: 90 },
+        bs: { hp: 91, at: 80, df: 95, sa: 134, sd: 100, sp: 90 },
         weightkg: 226.7,
         abilities: { 0: 'Motor Drive' }
     },
