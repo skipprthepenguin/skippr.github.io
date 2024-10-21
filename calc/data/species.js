@@ -2074,7 +2074,7 @@ var ADV_PATCH = {
     },
     'Gardevoir-Olympios': {
         types: ['Ground', 'Fairy'],
-        bs: { hp: 68, at: 65, df: 70, sa: 125, sd: 115, sp: 80 },
+        bs: { hp: 68, at: 65, df: 65, sa: 125, sd: 115, sp: 80 },
         weightkg: 48.4,
         abilities: { 0: 'Competitive' },
         baseSpecies: 'Gardevoir'
@@ -3174,7 +3174,8 @@ var DPP_PATCH = {
         types: ['Water', 'Steel'],
         bs: { hp: 84, at: 91, df: 88, sa: 116, sd: 106, sp: 60 },
         weightkg: 84.5,
-        abilities: { 0: 'Torrent' }
+        abilities: { 0: 'Torrent' },
+        otherFormes: ['Empoleon-Mega']
     },
     Fidgit: {
         types: ['Poison', 'Ground'],
@@ -5747,7 +5748,7 @@ var XY_PATCH = {
     'Gourgeist-Mega': {
         types: ["Grass", "Ghost"],
         gender: "N",
-        bs: { hp: 65, at: 100, df: 122, sa: 133, sd: 105, sp: 54 },
+        bs: { hp: 90, at: 100, df: 122, sa: 133, sd: 105, sp: 54 },
         abilities: { 0: "Eerie Cry" },
         weightkg: 12.5,
         baseSpecies: 'Gourgeist'
