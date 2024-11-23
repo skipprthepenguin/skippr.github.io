@@ -2181,11 +2181,11 @@ var ADV_PATCH = {
         gender: 'N'
     },
     Lairon: {
-        types: ['Steel', 'Rock'],
-        bs: { hp: 60, at: 100, df: 140, sa: 50, sd: 60, sp: 40 },
+        types: ['Steel'],
+        bs: { hp: 65, at: 100, df: 140, sa: 50, sd: 60, sp: 40 },
         weightkg: 120,
         nfe: true,
-        abilities: { 0: 'Sturdy' }
+        abilities: { 0: 'Filter' }
     },
     Latias: {
         types: ['Dragon', 'Psychic'],
